@@ -1,0 +1,17 @@
+.btn {
+
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  margin: 15px;
+
+  background-image: linear-gradient(90deg, #C76537 0%, #EF9571 26%, #BC5137 53%, #F6996B 100%);
+
+}
+
+.boxshadow {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
+ 

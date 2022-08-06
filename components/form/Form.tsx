@@ -91,7 +91,7 @@ export const Form = () => {
     <div className={styles.form}>
       <div className={styles.field}>
         <label className={styles.label} htmlFor="background">
-          Color:{" "}
+          Background :{" "}
         </label>
         <input
           type="color"

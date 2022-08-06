@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Poppins:wght@200;300;400;500;600&display=swap');
 
 @font-face {
-  font-family: a;
+  font-family: 'a';
   src: url('./AestheticRegular-Yzraq.otf');
 }
 
@@ -25,7 +25,7 @@
 }
 
 .desc span {
-  font-family: 'v';
+  font-family: 'v' , 'Josefin Sans';
   letter-spacing: 4px;
   display: inline;
   padding: 0 10px;
@@ -39,7 +39,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
 
   background-color: #FEFEFE;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='250' height='30' patternUnits='userSpaceOnUse'%3E%3Cpath id='a' data-color='outline' fill='none' stroke='%23E1E1E1' stroke-width='1' d='M-62.5-15C-31.3-15 0-7.5 0-7.5S31.3 0 62.5 0 125-7.5 125-7.5s31.3-7.5 62.5-7.5S250-7.5 250-7.5 281.3 0 312.5 0'%3E%3C/path%3E%3Cuse xlink:href='%23a' y='15'%3E%3C/use%3E%3Cuse xlink:href='%23a' y='30'%3E%3C/use%3E%3Cuse xlink:href='%23a' y='45'%3E%3C/use%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 768px) {
   .main {
-    padding: 4rem 1rem;
+    padding: 1rem 1rem;
   }
 }
 
@@ -77,7 +77,7 @@
   align-items: center;
   font-family: 'v';
   letter-spacing: 4px;
-  color: #333; 
+  color: #333;
 }
 
 .footer a {
@@ -102,13 +102,14 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  text-transform: uppercase;
 }
 
 
 .title,
 .description {
   text-align: center;
-  font-family: a;
+  font-family: 'a';
   letter-spacing: 1px;
   font-size: 146px;
 
@@ -124,13 +125,16 @@
 
 
 
-@media (max-width: 600px) {}
+@media (max-width: 768px) {
 
+  .title,
+  .description {
+    font-size: 51px;
+  }
 
+  .desc {
+    padding: 0px 5px;
+    text-align: center;
+  }
 
-
-
-
-
-
- 
+}

@@ -5,13 +5,30 @@ import { Neumorphism } from "../components/neumorphism/Neumorphism";
 import { FormProvider } from "../context/FormProvider";
 import { Form } from "../components/form/Form";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+toast( "🧐 Made by HARII"
+, {
+  position: "bottom-left",
+  autoClose: 4000,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: true,
+  draggable: true,
+  progress: undefined,
+});
+
 const Home: NextPage = () => {
   return (
     <>
       <Head>
         <title>SHADOW - RD DESIGN</title>
         <meta name="description" content="Generate your own Soft-UI CSS code" />
-        <link rel="icon" href="https://img.icons8.com/fluency-systems-filled/120/ffffff/harry-potter.png" />
+        <link
+          rel="icon"
+          href="https://img.icons8.com/fluency-systems-filled/120/ffffff/harry-potter.png"
+        />
       </Head>
 
       <main className={styles.main}>
@@ -31,6 +48,18 @@ const Home: NextPage = () => {
             </>
           </FormProvider>
         </div>
+
+        <ToastContainer
+          position="top-left"
+          autoClose={4000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
       </main>
 
       <footer className={styles.footer}>Created by HARII</footer>
@@ -39,7 +68,6 @@ const Home: NextPage = () => {
         <div className={styles.wave}></div>
         <div className={styles.wave}></div>
       </div>
-
     </>
   );
 };

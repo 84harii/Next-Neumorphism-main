@@ -3,12 +3,12 @@
 
 @font-face {
   font-family: a;
-  src: url('../components/AestheticRegular-Yzraq.otf');
+  src: url('./AestheticRegular-Yzraq.otf');
 }
 
 @font-face {
   font-family: 'v';
-  src: url('../components/FontsFree-Net-VIOLA.ttf');
+  src: url('./FontsFree-Net-VIOLA.ttf');
 }
 
 
